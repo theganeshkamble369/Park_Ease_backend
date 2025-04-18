@@ -13,7 +13,7 @@ const io = socketIO(server, { cors: { origin: "*" } });
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect("mongodb://localhost:27017/parkingdb");
+mongoose.connect("mongodb+srv://ganesh369:<GROBt0VqFru8Sh0h>@parkease.suhijys.mongodb.net/?appName=parkEase);
 
 app.use("/api/parking", parkingRoutes);
 app.set("socketio", io);
